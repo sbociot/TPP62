@@ -1,0 +1,169 @@
+img{
+	width: 350px;
+}
+#rome{
+	height: 220px;
+}
+h3{
+	color: white;
+}
+.row img{
+	margin-left: 30px;
+}
+/*
+span{
+	padding: 5px;
+	margin-left: 60px;
+	color: royalblue;
+	font-size: 35px;
+	font-weight: 400;
+	background-color: white;
+	display: block;
+	width: 200px;
+	border-radius: 5px;
+	margin-top: -120px;
+	position: absolute;
+}*/
+.box_info{
+	background-color: dodgerblue;
+	width: 180px;
+	position: relative;
+	margin-left: 60px;
+	padding: 10px;
+	margin-top: -200px;
+	color: white;
+
+}
+.box_info a {
+	background-color: white;
+	display: block;
+	width: 160px;
+	padding: 10px;
+
+}
+#offre img{
+	width: 250px;
+	display: inline-block;
+	margin-top: 60px;
+	margin-left: 20px;
+ }
+.col-sm-3>p{
+	margin-left: 20px;
+	width: 250px;
+	/*border: 1px solid black ;*/
+	padding: 10px;
+	background-color: lightgrey;
+	margin-top: -13px;
+	height: 170px;
+
+}
+.col-sm-3>h2{
+	margin-left: 20px;
+	/*border: 1px solid black;*/
+	width:250px;
+	background-color: lightgrey;
+	height: 50px;
+	margin-top: 0;
+	padding: 10px;
+}
+.col-sm-3>p>a{
+	display: block;
+	background-color: dodgerblue;
+	height: 60px;
+	padding: 15px;
+	color: white;
+
+}
+#ca{
+	margin-top: 15px;
+}
+#flo{
+	height: 180px;
+}
+#save{
+	width: 75px;
+	height: 50px;
+}
+/* menu : Donner une couleur de fond et supprimer les puces */
+ul.menu {
+	list-style-type: none;
+	overflow: hidden;
+	width: 100%;
+	border-bottom: 5px solid lightslategrey;
+	background-color: inherit;
+}
+
+/* Mettre les entrées côte-à-côte */
+ul.menu li {
+	float: left;
+}
+
+/* Styliser les entrées de menu */
+ul.menu li a {
+	display: inline;
+	color: dodgerblue;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	transition: 0.3s;
+	font-size: 17px;
+}
+
+/* Changement des liens au survol */
+ul.menu li a:hover {
+	color: black;
+	display: block;
+}
+
+/* Cacher l'icône d'ouverture/fermeture du menu */
+ul.menu li.icon {
+	display: none;
+}
+#seat {
+	width: 57px;
+	height: 45px;
+
+}
+.en-ligne{
+	background-color: lightgrey;
+	height: 200px;
+	margin-top: 470px;
+}
+/*
+    Quand l'écran à en moins de 680 pixels en largeur.
+*/
+@media screen and (max-width:680px) {
+	/* Cacher les entrées de menu sauf la première ("Home") */
+	ul.menu li:not(:first-child) {
+		display: none;
+	}
+
+	/* Montrer l'entrée qui correpond à l'icône d'ouverture/fermeture */
+	ul.menu li.icon {
+		float: right;
+		display: inline-block;
+
+	}
+
+	/* La clase "open" contrôle l'ouverture du menu. Elle est positionnée par Javascript au click sur l'icône. */
+	ul.menu.open {
+		position: relative;
+	}
+
+	ul.menu.open li.icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+
+	ul.menu.open li {
+		float: none;
+		display: inline;
+	}
+
+	ul.menu.open li a {
+		display: block;
+		text-align: left;
+
+	}
+}
