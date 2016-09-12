@@ -128,7 +128,7 @@ require_once(dirname(__FILE__) . '/defines.php');
     </div>
 </div>
 </div>
-<script src="script/main.js"></script>
+
 
 
 
