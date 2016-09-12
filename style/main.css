@@ -1,52 +1,10 @@
 img{
 	width: 350px;
 }
-#rome{
-	height: 220px;
-}
-h3{
-	color: white;
-}
-.row img{
-	margin-left: 30px;
-}
-/*
-span{
-	padding: 5px;
-	margin-left: 60px;
-	color: royalblue;
-	font-size: 35px;
-	font-weight: 400;
-	background-color: white;
-	display: block;
-	width: 200px;
-	border-radius: 5px;
-	margin-top: -120px;
-	position: absolute;
-}*/
-.box_info{
-	background-color: dodgerblue;
-	width: 180px;
-	position: relative;
-	margin-left: 60px;
-	padding: 10px;
-	margin-top: -200px;
-	color: white;
 
-}
-.box_info a {
-	background-color: white;
-	display: block;
-	width: 160px;
-	padding: 10px;
-
-}
-#offre img{
-	width: 250px;
-	display: inline-block;
+.col-sm-4{
 	margin-top: 60px;
-	margin-left: 20px;
- }
+}
 .col-sm-3>p{
 	margin-left: 20px;
 	width: 250px;
@@ -56,16 +14,54 @@ span{
 	margin-top: -13px;
 	height: 170px;
 
+
 }
-.col-sm-3>h2{
+.forfait{
+	background-color: lightgray;
+	padding: 15px;
+	margin-top: 10px;
+}
+.forfait>p>a{
+	background-color: dodgerblue;
+	padding: 10px;
+	color: white;
+	margin-top: 10px;
+	cursor: pointer;
+	border-radius: 5px;
+}
+.forfait>p{
+	background-color: dodgerblue;
+	padding: 10px;
+	color: white;
+	margin-top: 10px;
+	cursor: pointer;
+	border-radius: 5px;
+}
+.forfait>a:hover {
+	color: black;
+	text-decoration: none;
+}
+.forfait>img{
+	margin-left: 8px;
+}
+.forfait>h2{
+	 background-color: dodgerblue;
+	 color: white;
+	padding: 20px;
+	border-radius: 5px;
+	font-size: 20px;
+ }
+.col-sm-3{
 	margin-left: 20px;
 	/*border: 1px solid black;*/
 	width:250px;
 	background-color: lightgrey;
-	height: 50px;
+	height: 20px;
 	margin-top: 0;
 	padding: 10px;
+
 }
+
 .col-sm-3>p>a{
 	display: block;
 	background-color: dodgerblue;
@@ -89,7 +85,7 @@ ul.menu {
 	list-style-type: none;
 	overflow: hidden;
 	width: 100%;
-	border-bottom: 5px solid lightslategrey;
+	border-bottom: 1px solid lightslategrey;
 	background-color: inherit;
 }
 
@@ -130,8 +126,241 @@ ul.menu li.icon {
 	margin-top: 470px;
 }
 /*
-    Quand l'écran à en moins de 680 pixels en largeur.
+    debut du carousel
 */
+#one,#two,#three{
+	width: 940px;
+	height: 520px;
+}
+#slider {
+	width: 940px;
+	height: 520px;
+	margin: 50px auto 0;
+	position: relative;
+	background: #fff;
+	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+
+}
+
+#slider:before, #slider:after {
+	content: '';
+	position: absolute;
+	width: 60px;
+	height: 20px;
+	-webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+	-ms-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+	-o-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+	-webkit-transform: rotate(-4deg) skew(-10deg);
+	-moz-transform: rotate(-4deg) skew(-10deg);
+	-o-transform: rotate(-4deg) skew(-10deg);
+	-ms-transform: rotate(-4deg) skew(-10deg);
+	transform: rotate(-4deg) skew(-10deg);
+	left: 10px;
+	bottom: 13px;
+	z-index: -1;
+}
+
+#slider:after {
+	left: auto;
+	right: 10px;
+	-webkit-transform: rotate(4deg) skew(10deg);
+	-moz-transform: rotate(4deg) skew(10deg);
+	-o-transform: rotate(4deg) skew(10deg);
+	-ms-transform: rotate(4deg) skew(10deg);
+	transform: rotate(4deg) skew(10deg);
+}
+
+#slider ul {
+	width: 140px;
+	height: 40px;
+	padding: 0 0 0 0;
+	position: absolute;
+	z-index: 10;
+	list-style: none;
+	left: 50%;
+	margin-left: -70px;
+	bottom: -60px;
+}
+
+#slider ul li:first-child {
+	margin-left: 16px;
+}
+
+#slider ul li {
+	float: left;
+	margin-right: 12px;
+	margin-top: 14px;
+}
+
+#slider ul li:last-child {
+	margin-right: 0;
+}
+
+#slider ul li a {
+	width: 12px;
+	height: 12px;
+	display: block;
+	outline: none;
+	border: none;
+	position: relative;
+	z-index: 2;
+	background: #aaa;
+	box-shadow: inset 0 1px 1px 0 rgba(0, 0, 0, 0.6), 0 1px 1px 0 white;
+	-moz-box-shadow: inset 0 1px 1px 0 rgba(0, 0, 0, 0.6), 0 1px 1px 0 white;
+	-webkit-box-shadow: inset 0 1px 1px 0 rgba(0, 0, 0, 0.6), 0 1px 1px 0 white;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	margin-top: 10px;
+}
+
+#slider ul li a:hover {
+	background: #888;
+}
+
+#slider img {
+	position: absolute;
+	left: 0;
+	top: 0;
+	opacity: 0;
+	-webkit-transform: rotateZ(-10deg);
+	-moz-transform: rotateZ(-10deg);
+	-ms-transform: rotateZ(-10deg);
+	-o-transform: rotateZ(-10deg);
+	transform: rotateZ(-10deg);
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-ms-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	transition: all .5s ease;
+}
+
+#slider img:target {
+	opacity: 1;
+	-webkit-transform: rotateZ(0deg);
+	-moz-transform: rotateZ(0deg);
+	-ms-transform: rotateZ(0deg);
+	-o-transform: rotateZ(0deg);
+	transform: rotateZ(0deg);
+}
+
+#slider img#five {
+	opacity: 1;
+	-webkit-transform: rotateZ(0deg);
+	-moz-transform: rotateZ(0deg);
+	-ms-transform: rotateZ(0deg);
+	-o-transform: rotateZ(0deg);
+	transform: rotateZ(0deg);}
+
+#slider img:not(:target), #slider img:target ~ img#five  {
+	opacity: 0;
+	-webkit-transform: rotateZ(-10deg);
+	-moz-transform: rotateZ(-10deg);
+	-ms-transform: rotateZ(-10deg);
+	-o-transform: rotateZ(-10deg);
+	transform: rotateZ(-10deg);
+}
+
+#slider ul li a[href="#five"] {
+	background: #777;
+}
+
+#one:target ~ ul li a[href="#one"],
+#two:target ~ ul li a[href="#two"],
+#three:target ~ ul li a[href="#three"] {
+	background: #777;
+}
+
+#two:target ~ ul li a[href="#five"],
+#three:target ~ ul li a[href="#five"]
+/*#four:target ~ ul li a[href="#five"]*/,
+#one:target ~ ul li a[href="#five"] {
+	background: #aaa;
+}
+/*fin du css Carousel*/
+/*debut du formulaire*/
+.form-style-9{
+	max-width: 950px;
+	background: #FAFAFA;
+	padding: 30px;
+	margin: 50px auto;
+	box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
+	border-radius: 10px;
+	border: 2px solid #305A72;
+}
+.form-style-9 ul{
+	padding:0;
+	margin:0;
+	list-style:none;
+}
+.form-style-9 ul li{
+	display: block;
+	margin-bottom: 10px;
+	min-height: 35px;
+}
+.form-style-9 ul li  .field-style{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	padding: 8px;
+	outline: none;
+	border: 1px solid #B0CFE0;
+	-webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-ms-transition: all 0.30s ease-in-out;
+	-o-transition: all 0.30s ease-in-out;
+
+}.form-style-9 ul li  .field-style:focus{
+	 box-shadow: 0 0 5px #B0CFE0;
+	 border:1px solid #B0CFE0;
+ }
+.form-style-9 ul li .field-split{
+	width: 49%;
+}
+.form-style-9 ul li .field-full{
+	width: 100%;
+}
+.form-style-9 ul li input.align-left{
+	float:left;
+}
+.form-style-9 ul li input.align-right{
+	float:right;
+}
+.form-style-9 ul li textarea{
+	width: 100%;
+	height: 100px;
+}
+.form-style-9 ul li input[type="button"],
+.form-style-9 ul li input[type="submit"] {
+	-moz-box-shadow: inset 0 1px 0 0 #3985B1;
+	-webkit-box-shadow: inset 0 1px 0 0 #3985B1;
+	box-shadow: inset 0 1px 0 0  #3985B1;
+	background-color: #216288;
+	border: 1px solid #17445E;
+	display: inline-block;
+	cursor: pointer;
+	color: #FFFFFF;
+	padding: 8px 18px;
+	text-decoration: none;
+	font: 12px Arial, Helvetica, sans-serif;
+}
+.form-style-9 ul li input[type="button"]:hover,
+.form-style-9 ul li input[type="submit"]:hover {
+	background: linear-gradient(to bottom, #2D77A2 5%, #337DA8 100%);
+	background-color: #28739E;
+}
+/*fin du formulaire*/
+
+
+
+
+
+
+
 @media screen and (max-width:680px) {
 	/* Cacher les entrées de menu sauf la première ("Home") */
 	ul.menu li:not(:first-child) {

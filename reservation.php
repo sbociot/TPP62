@@ -1,5 +1,10 @@
 <?php
 require_once('views/page_top.php');
+require_once(dirname(__FILE__) . '/forfaits.php');
+$forfait_list = get_forfaits();
+if (array_key_exists('forfait', $_GET) && in_array($_GET['forfait'], get_forfaits())) {
+    $categorie_page = $_GET['forfait'];
+}
 ?>
 <form class="form-style-9">
     <ul>
@@ -15,6 +20,17 @@ require_once('views/page_top.php');
 
         <li>
             <input type="text" name="field3" class="field-style field-full align-none" placeholder="Subject" />
+        </li>
+        <li>
+            Forfait
+            <select name="forfait">
+                <option value="volvo">
+
+
+
+                </option>
+
+            </select>
         </li>
         <li>
             <textarea name="field5" class="field-style" placeholder="Message"></textarea>

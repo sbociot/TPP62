@@ -1,12 +1,13 @@
 <?php
-define('SITE_NAME', 'Saf Saf Agengece');
+define('SITE_NAME', 'Voyage');
 define('HOME_PAGE_NAME', 'Accueil');
 
 $menu_data = array(
-    'Accueil' => 'catalogue.php',
+    'Accueil' => 'index.php',
     'Contact' => 'contact.php',
     'Catalogue' => 'catalog.php',
-    'A propos' => 'a_propos.php',
+    'Reservation' => 'reservation.php',
+
 );
 /*$top_menu = array(
   'Nos service' => '#',
@@ -15,3 +16,4 @@ $menu_data = array(
     '<span class="glyphicon glyphicon-user"></span> Log in' => '#',
 
 );*/
+define('IMG_PATH', 'images/images-modal/');
