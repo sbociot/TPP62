@@ -41,7 +41,7 @@ foreach (get_categories() as $categorie) { // Boucle sur les 3 categories
             ?>
             <a href="reservation.php"><p><?= $forfait[FORF_NOM] ?></p></a>
             <p>
-                <a href="reservation.php?$forfait[FORF_PHOTO1]"><img style="width: 200px;" src=" <?= IMG_PATH . $forfait[FORF_PHOTO1] ?>" alt=""/></a>
+                <a href="reservation.php?"><img style="width: 200px;" src=" <?= IMG_PATH . $forfait[FORF_PHOTO1] ?>" alt=""/></a>
             </p>
             </div>
 

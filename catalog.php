@@ -22,7 +22,7 @@ require_once('views/page_top.php');
                 <div class="forfait">
                     <h2><?= $forfait[FORF_NOM] ?></h2>
                     <img class="img-rounded" src="<?= IMG_PATH . $forfait[FORF_PHOTO1] ?>" alt=""/>
-                    <p><a href="#"><?= $forfait[FORF_DESCRIPTION] ?></a></p>
+                    <p><a href="reservation.php?forfait_id=<?= $id?>"><?= $forfait[FORF_DESCRIPTION]?></a></p>
 
 
 
