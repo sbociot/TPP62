@@ -18,9 +18,10 @@ require_once(dirname(__FILE__) . '/../defines.php');// Inclusion des defines
 </head>
 <body>
 <header>
-    <div class=>
+    <div class="pull-right">
         <img id="logo" src="images/logo_VOYAGE_2012.png" alt="voyage">
     </div>
+
     <header>
         <?php require('menu.php'); ?>
     </header>
