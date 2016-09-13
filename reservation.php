@@ -15,11 +15,17 @@ if (array_key_exists('forfait', $_GET) && in_array($_GET['forfait'], get_forfait
         </li>
         <li>
             <input type="text" name="field3" class="field-style field-split align-left" placeholder="Phone" />
-            <input type="url" name="field4" class="field-style field-split align-right" placeholder="Website" />
+            <!--<input type="url" name="field4" class="field-style field-split align-right" placeholder="Website" />-->
         </li>
 
         <li>
-            <input type="text" name="field3" class="field-style field-full align-none" placeholder="Subject" />
+            <p>Animaux</p>
+            <select name="carlist" form="carform">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+
+            </select>
         </li>
         <li>
             Forfait
