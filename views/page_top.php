@@ -18,7 +18,7 @@ require_once(dirname(__FILE__) . '/../defines.php');// Inclusion des defines
 </head>
 <body>
 <header>
-    <div class="pull-right">
+    <div class="jumbotron text-center">
         <img id="logo" src="images/logo_VOYAGE_2012.png" alt="voyage">
     </div>
 

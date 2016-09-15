@@ -4,7 +4,7 @@ define('HOME_PAGE_NAME', 'Accueil');
 
 $menu_data = array(
     'Accueil' => 'index.php',
-    'Contact' => 'contact.php',
+    /*'Contact' => 'contact.php',*/
     'Catalogue' => 'catalog.php',
     'Reservation' => 'reservation.php',
 

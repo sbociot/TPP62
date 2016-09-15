@@ -61,6 +61,11 @@ img{
 	padding: 10px;
 
 }
+.cat{
+	background-color: dodgerblue;
+	padding: 5px;
+	border-radius: 2px;
+}
 
 .col-sm-3>p>a{
 	display: block;
@@ -133,9 +138,10 @@ ul.menu li.icon {
 	height: 520px;
 }
 #slider {
-	width: 940px;
+	width: 937px;
 	height: 520px;
-	margin: 50px auto 0;
+	margin: 50px;
+	margin-left: 186px;
 	position: relative;
 	background: #fff;
 	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
@@ -359,8 +365,29 @@ ul.menu li.icon {
 
 
 
+/*Edition de la Page D'acceuil*/
 
 
+.categorie>.promo{
+
+
+
+	background-color: lightgray;
+	border-radius: 5px;
+	padding: 10px;
+	width: 700px;
+	margin-left: 300px;
+	margin-top: 75px;
+	color: white;
+}
+.debt,.fin{
+	width: 100px;
+	border-radius: 5px 0;
+	background-color: dodgerblue;
+	padding: 10px;
+	margin-top: 10px;
+	color: white;
+}
 
 @media screen and (max-width:680px) {
 	/* Cacher les entrées de menu sauf la première ("Home") */
