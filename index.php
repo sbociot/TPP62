@@ -53,7 +53,7 @@ $forfaits_data = get_forfaits();
 
     <div class="promo">
         <p class="cat"><?= $forfaits_data['23']['categorie'] ?></p>
-        <img class="img-rounded" src="<?= IMG_PATH . $forfaits_data['23']['photo2'] ?>" alt="croisière"/>
+        <img class="img-rounded" src="<?= IMG_PATH . $forfaits_data['23']['photo1'] ?>" alt="croisière"/>
         <p class="debt"><?= $forfaits_data['23']['debut_saison'] ?></p>
         <p class="fin"><?= $forfaits_data['23']['fin_saison'] ?></p>
         <p class="cat"><?= $forfaits_data['23']['prix'] ?></p>
